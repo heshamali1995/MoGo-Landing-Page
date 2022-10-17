@@ -1,0 +1,778 @@
+@use "./base/mixins" as *;
+@use "./base/functions" as *;
+@use "./base/variables" as *;
+
+/*======== Start Global Styles ========*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: $skyBlue;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3f8578;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+body {
+    @include fontFace("Roboto");
+    font-size: pxToRem(14);
+}
+
+/*======== End Global Styles ========*/
+
+/*======== Start Shared Classes ========*/
+
+%after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: $main-color;
+    bottom: 0px;
+    left: 10%;
+}
+h2 {
+    position: relative;
+    display: inline-block;
+    @include fontFace("Montserrat");
+    font-size: pxToRem(25);
+    font-weight: 700;
+    &:after {
+        @extend %after;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 3px;
+        background-color: $secondary-color;
+    }
+}
+h3 {
+    @include fontFace("KaushanScript");
+    font-size: pxToRem(20);
+    font-weight: 400;
+}
+p {
+    color: $gray;
+}
+.img-container {
+    background-color: $skyBlue;
+    .card-container {
+        cursor: pointer;
+        .card-overlay {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
+            z-index: 10;
+            display: none;
+            div {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &:hover {
+            transform: translate(-10px, -10px);
+            transition: all 0.3s linear;
+        }
+    }
+}
+
+/*======== End Shared Classes ========*/
+
+/*======== Start Header Section ========*/
+
+header {
+    background-image: url("../assets/images/bg-header.jpg");
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    @include fontFace("Montserrat");
+    .navigate-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #f38181;
+        z-index: 5;
+        display: none;
+        i {
+            line-height: 50px;
+            cursor: pointer;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+    .overlay {
+        top: 0px;
+        left: 0px;
+        background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: $white;
+        &.active {
+            color: $main-color;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+            &:after {
+                @extend %after;
+            }
+        }
+        &:hover:not(.active) {
+            color: $main-color;
+            transition: color 0.3s ease-in-out;
+            position: relative;
+            &:after {
+                @extend %after;
+            }
+        }
+    }
+    form {
+        i {
+            cursor: pointer;
+            &:hover {
+                color: $main-color;
+                transition: color 0.3s ease-in-out;
+            }
+        }
+    }
+    .slider {
+        height: calc(100vh - 56px);
+        .carousel-item {
+            button {
+                border: 2px solid $white;
+                padding: 5px 20px;
+                &:after {
+                    @extend %after;
+                    width: 60%;
+                    height: 2px;
+                    background-color: $white;;
+                    bottom: 60px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    pointer-events: none;
+                }
+            }
+            h2 {
+                @include fontFace("KaushanScript");
+                font-size: pxToRem(55);
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                }
+            }
+            h1 {
+                font-size: pxToRem(110);
+            }
+        }
+        .carousel-indicators {
+            button {
+                width: 20%;
+                text-indent: 0px;
+                p {
+                    font-size: pxToRem(18);
+                    text-align: left;
+                    color: $white;
+                    span {
+                        font-weight: 400;
+                        font-size: pxToRem(14);
+                    }
+                }
+                &.active {
+                    &:after {
+                        @extend %after;
+                        top: 0px;
+                        left: 0px;
+                        width: 25%;
+                        height: 100%;
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*======== End Header Section ========*/
+
+/*======== Start Story Section ========*/
+
+.story {
+    .stats {
+        background-color: $skyBlue;
+        @include fontFace("Montserrat");
+        p {
+            color: $white;
+        }
+        p:first-of-type {
+            font-size: pxToRem(50);
+            font-weight: bold;
+        }
+    }
+}
+
+/*======== End Story Section ========*/
+
+/*======== Start Services Section ========*/
+
+.services {
+    min-height: 100vh;
+    .serv-wrapper {
+        .serv-description {
+            p:first-of-type {
+                color: $black;
+                font-weight: 600;
+            }
+        }
+        .first-row {
+            margin-bottom: 11px;
+            &:after {
+                @extend %after;
+                width: 100%;
+                height: 1px;
+                bottom: -6px;
+                left: 0;
+                background-color: $gray;
+            }
+        }
+    }
+}
+
+/*======== End Services Section ========*/
+
+/*======== Start Unique Design Section ========*/
+
+.unique {
+    min-height: 100vh;
+    background-image: url("../assets/images/unique-design/bg-unique-design.jpg");
+    background-size: cover;
+    .unique-img {
+        height: calc(100vh - 190px);
+        .sm-image {
+            top: 25%;
+            right: 20%;
+        }
+    }
+}
+
+/*======== End Unique Design Section ========*/
+
+/*======== Start What We Do Section ========*/
+
+.we-do {
+    min-height: 100vh;
+    .do-img {
+        width: 48%;
+        height: 290px;
+    }
+    .accordion {
+        width: 48%;
+
+        h2 {
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+            }
+        }
+        span {
+            font-size: pxToRem(14);
+        }
+        .accordion-body {
+            height: 100px;
+            overflow: auto;
+        }
+    }
+}
+
+/*======== End What We Do Section ========*/
+
+/*======== Start Testimonial Section ========*/
+
+.testimonial {
+    .name {
+        font-size: pxToRem(18);
+    }
+    @include carouselStyle;
+}
+
+/*======== End Testimonial Section ========*/
+
+/*======== Start Our Team Section ========*/
+
+.our-team {
+    min-height: 100vh;
+    span {
+        font-weight: bold;
+    }
+    .card-container {
+        .icons-wrapper {
+            background-color: rgba(252, 227, 138, 0.9);
+            i {
+                color: rgba(243,129,129,0.9);
+                font-size: pxToRem(18);
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*======== End Our Team Section ========*/
+
+/*======== Start Sponsors Section ========*/
+
+.sponsors {
+    background-color: $bg-color;
+    .row {
+        div {
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}
+
+/*======== End Sponsors Section ========*/
+
+/*======== Start Our Work Section ========*/
+
+.our-work {
+    .work-imgs {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        .img-container {
+            background-color: none;
+            .card-container {
+                i {
+                    font-size: pxToRem(18);
+                }
+                &:hover {
+                    transform: translate(0px, 0px);
+                }
+            }
+        }
+        .lg-img {
+            grid-area: 1/3/3/3;
+        }
+    }
+    .testimonial {
+        .name {
+            font-size: pxToRem(18);
+        }
+        @include carouselStyle;
+    }
+}
+
+/*======== End Our Work Section ========*/
+
+/*======== Start Happy Clients Section ========*/
+
+.clients {
+    background-image: url("../assets/images/happy-client/bg-happy-client.jpg");
+    background-size: cover;
+    background-position: center center;
+    .clients-wrapper {
+        .client-image {
+            width: 120px;
+            height: 120px;
+            img {
+                height: 100%;
+            }
+        }
+        .client-description {
+            p:not(.last) {
+                color: $black;
+            }
+            p:first-of-type {
+                font-weight: 600;
+                @include fontFace("Montserrat");
+            }
+            p:nth-of-type(2) {
+                position: relative;
+                &:after {
+                    @extend %after;
+                    top: 30px;
+                    left: 0px;
+                    width: 70px;
+                    height: 3px;
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+/*======== End Happy Clients Section ========*/
+
+/*======== Start Blogs Section ========*/
+
+.blogs {
+    .blogs-cards {
+        .card {
+            .time {
+                position: absolute;
+                left: -10px;
+                bottom: 48%;
+                background-color: $skyBlue;
+                @include fontFace("Montserrat");
+                p:first-of-type {
+                    font-size: pxToRem(28);
+                }
+            }
+            .card-body {
+                p:first-of-type {
+                    color: $black;
+                }
+                p:last-of-type {
+                    &:after {
+                        @extend %after;
+                        width: 100%;
+                        height: 1px;
+                        left: 0px;
+                        bottom: -15px;
+                        background-color: $gray;
+                    }
+                }
+                .viewers {
+                    i {
+                        color: $skyBlue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*======== End Blogs Section ========*/
+
+/*======== Start Map Section ========*/
+
+.map {
+    background-image: url("../assets/images/map/bg-map.jpg");
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    .map-text {
+        color: $secondary-color;
+        i {
+            font-size: pxToRem(36);
+        }
+    }
+    iframe {
+        height: 400px;
+    }
+}
+
+/*======== End Map Section ========*/
+
+/*======== Start Footer Section ========*/
+
+footer {
+    .footer-wrapper {
+        .footer-text {
+            .logo-name {
+                font-size: pxToRem(40);
+                @include fontFace("Montserrat");
+            }
+            .social-media {
+                i {
+                    color: $skyBlue;
+                    font-size: pxToRem(18);
+                    cursor: pointer;
+                }
+            }
+            .followers {
+                &:after {
+                    @extend %after;
+                    width: 100%;
+                    height: 1px;
+                    bottom: 0px;
+                    left: 0px;
+                    background-color: $gray;
+                }
+            }
+            form {
+                input {
+                    outline: none;
+                    border: 2px solid $bg-color;
+                }
+                button {
+                    border: none;
+                    background-color: $skyBlue;
+                    color: $white;
+                }
+            }
+        }
+        .footer-blogs {
+            .blog-text {
+                font-size: pxToRem(18);
+            }
+            img {
+                cursor: pointer;
+            }
+        }
+        .instagram {
+            .images {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 5px;
+                img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+        &:after {
+            @extend %after;
+            width: 100%;
+            height: 1px;
+            background-color: $gray;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+    .footer-end {
+        color: $black;
+        font-weight: bold;
+        font-size: pxToRem(16);
+        span {
+            color: $secondary-color;
+        }
+    }
+}
+
+/*======== End Footer Section ========*/
+
+/*======== Start Media Query ========*/
+
+/*======== XS Screens ========*/
+
+@media all and (max-width: 575px) {
+    .unique {
+        .unique-img {
+            img {
+                width: 100%;
+            }
+            .sm-image {
+                display: none;
+            }
+        }
+    }
+    .we-do {
+        .do-wrapper {
+            flex-direction: column;
+            .do-img {
+                width: 100%;
+            }
+            .accordion {
+                width: 100%;
+            }
+        }
+    }
+    .our-team {
+        .img-container {
+            .card-container {
+                &:hover {
+                    transform: translate(-5px, -5px);
+                }
+            }
+        }
+    }
+    .our-work {
+        .work-imgs {
+            grid-template-columns: repeat(1, 1fr);
+            .lg-img {
+                grid-area:4/1/5/2;
+            }
+        }
+    }
+}
+
+/*======== XS : SM Screens ========*/
+
+@media all and (max-width: 767px) {
+    html {
+        font-size: 0.8rem;
+    }
+    header {
+        .navbar-expand-lg .navbar-nav .nav-link {
+            &.active {
+                &:after {
+                    width: 100%;
+                    left: 0px;
+                }
+            }
+            &:hover:not(.active) {
+                &:after {
+                    width: 100%;
+                    left: 0px;
+                }
+            }
+        }
+        .slider {
+            .carousel-item {
+                padding-top: 30px;
+                    button {
+                    &:after {
+                        width: 80%;
+                        bottom: 40px;
+                    }
+                }
+                h2 {
+                    font-size: pxToRem(35);
+                    margin-bottom: 40px;
+                }
+                h1 {
+                    font-size: pxToRem(50);
+                    width: 80% !important;
+                }
+            }
+                .carousel-indicators {
+                    bottom: 80px;
+                    span {
+                        display: block;
+                    }
+            }
+        }
+    }
+    .story {
+        .img-container {
+            .card-container {
+                &:hover {
+                    transform: translate(-5px, -5px);
+                }
+            }
+        }
+        .stats {
+            .stat {
+                div {
+                    border-left: 0 !important;
+                    border-right: 0 !important;
+                }
+            }
+        }
+    }
+    .our-work {
+        .work-imgs {
+            grid-template-columns: repeat(2, 1fr);
+            .lg-img {
+                grid-area:4/1/5/2;
+            }
+        }
+        .testimonial {
+            .name {
+                &:after {
+                    left: -20px;
+                }
+            }
+        }
+    }
+    .blogs {
+        .blogs-cards {
+            .card {
+                .time {
+                    left: -5px;
+                }
+            }
+        }
+    }
+}
+
+/*======== SM Screens ========*/
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+    html {
+        font-size: 0.9rem;
+    }
+    header {
+        .slider {
+            .carousel-item {
+                h2 {
+                    font-size: pxToRem(40);
+                    margin-bottom: 40px;
+                }
+                h1 {
+                    font-size: pxToRem(50);
+                    width: 60% !important;
+                }
+            }
+                .carousel-indicators {
+                    bottom: 50px;
+            }
+        }
+    }
+}
+
+/*======== M Screens ========*/
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    header {
+        .slider {
+            .carousel-item {
+                h2 {
+                    font-size: pxToRem(45);
+                    margin-bottom: 40px;
+                }
+                h1 {
+                    font-size: pxToRem(80);
+                    width: 60% !important;
+                }
+            }
+                .carousel-indicators {
+                    bottom: 50px;
+            }
+        }
+    }
+}
+
+/*======== L Screens ========*/
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    header {
+        .slider {
+            .carousel-item {
+                h2 {
+                    margin-bottom: 40px;
+                }
+                h1 {
+                    font-size: pxToRem(90);
+                }
+            }
+
+        }
+    }
+}
+
+/*======== XS : L Screens ========*/
+
+@media all and (max-width: 1199px) {
+    .testimonial {
+        .name {
+            &:after {
+                left: -20px;
+            }
+        }
+    }
+}
+
+/*======== End Media Query ========*/

@@ -1,0 +1,517 @@
+@font-face {
+  font-family: "KaushanScript";
+  src: url("../assets/fonts/Kaushan/KaushanScript-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+/*======== Start Global Styles ========*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #95e1d3;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f8578;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+}
+
+/*======== End Global Styles ========*/
+/*======== Start Shared Classes ========*/
+footer .footer-wrapper:after, footer .footer-wrapper .footer-text .followers:after, .blogs .blogs-cards .card .card-body p:last-of-type:after, .clients .clients-wrapper .client-description p:nth-of-type(2):after, .our-work .testimonial .name:after, .testimonial .name:after, .services .serv-wrapper .first-row:after, header .slider .carousel-indicators button.active:after, header .slider .carousel-item button:after, header .navbar-expand-lg .navbar-nav .nav-link:hover:not(.active):after, header .navbar-expand-lg .navbar-nav .nav-link.active:after, h2:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #fce38a;
+  bottom: 0px;
+  left: 10%;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+h2:after {
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 3px;
+  background-color: #f38181;
+}
+
+h3 {
+  font-family: "KaushanScript";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+p {
+  color: #999;
+}
+
+.img-container {
+  background-color: #95e1d3;
+}
+.img-container .card-container {
+  cursor: pointer;
+}
+.img-container .card-container .card-overlay {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  z-index: 10;
+  display: none;
+}
+.img-container .card-container .card-overlay div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-container .card-container:hover {
+  transform: translate(-10px, -10px);
+  transition: all 0.3s linear;
+}
+
+/*======== End Shared Classes ========*/
+/*======== Start Header Section ========*/
+header {
+  background-image: url("../assets/images/bg-header.jpg");
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+  font-family: "Montserrat";
+}
+header .navigate-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #f38181;
+  z-index: 5;
+  display: none;
+}
+header .navigate-top i {
+  line-height: 50px;
+  cursor: pointer;
+}
+header .navigate-top:active {
+  transform: scale(0.9);
+}
+header .overlay {
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+}
+header .navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
+}
+header .navbar-expand-lg .navbar-nav .nav-link.active {
+  color: #fce38a;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+header .navbar-expand-lg .navbar-nav .nav-link:hover:not(.active) {
+  color: #fce38a;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+header form i {
+  cursor: pointer;
+}
+header form i:hover {
+  color: #fce38a;
+  transition: color 0.3s ease-in-out;
+}
+header .slider {
+  height: calc(100vh - 56px);
+}
+header .slider .carousel-item button {
+  border: 2px solid white;
+  padding: 5px 20px;
+}
+header .slider .carousel-item button:after {
+  width: 60%;
+  height: 2px;
+  background-color: white;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+header .slider .carousel-item h2 {
+  font-family: "KaushanScript";
+  font-size: 3.4375rem;
+}
+header .slider .carousel-item h2:after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+header .slider .carousel-item h1 {
+  font-size: 6.875rem;
+}
+header .slider .carousel-indicators button {
+  width: 20%;
+  text-indent: 0px;
+}
+header .slider .carousel-indicators button p {
+  font-size: 1.125rem;
+  text-align: left;
+  color: white;
+}
+header .slider .carousel-indicators button p span {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+header .slider .carousel-indicators button.active:after {
+  top: 0px;
+  left: 0px;
+  width: 25%;
+  height: 100%;
+  background-color: #f38181;
+}
+
+/*======== End Header Section ========*/
+/*======== Start Story Section ========*/
+.story .img-wrapper {
+  height: 200px;
+}
+.story .stats {
+  background-color: #95e1d3;
+  font-family: "Montserrat";
+}
+.story .stats p {
+  color: white;
+}
+.story .stats p:first-of-type {
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+/*======== End Story Section ========*/
+/*======== Start Services Section ========*/
+.services {
+  min-height: 100vh;
+}
+.services .serv-wrapper .serv-description p:first-of-type {
+  color: black;
+  font-weight: 600;
+}
+.services .serv-wrapper .first-row {
+  margin-bottom: 11px;
+}
+.services .serv-wrapper .first-row:after {
+  width: 100%;
+  height: 1px;
+  bottom: -6px;
+  left: 0;
+  background-color: #999;
+}
+
+/*======== End Services Section ========*/
+/*======== Start Unique Design Section ========*/
+.unique {
+  min-height: 100vh;
+  background-image: url("../assets/images/unique-design/bg-unique-design.jpg");
+  background-size: cover;
+}
+.unique .unique-img {
+  height: calc(100vh - 190px);
+}
+.unique .unique-img .sm-image {
+  top: 25%;
+  right: 20%;
+}
+
+/*======== End Unique Design Section ========*/
+/*======== Start What We Do Section ========*/
+.we-do {
+  min-height: 100vh;
+}
+.we-do .do-img {
+  width: 48%;
+  height: 290px;
+}
+.we-do .accordion {
+  width: 48%;
+}
+.we-do .accordion h2:after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+.we-do .accordion span {
+  font-size: 0.875rem;
+}
+.we-do .accordion .accordion-body {
+  height: 100px;
+  overflow: auto;
+}
+
+/*======== End What We Do Section ========*/
+/*======== Start Testimonial Section ========*/
+.testimonial {
+  background-color: #f8f8f8;
+}
+.testimonial .name {
+  font-size: 1.125rem;
+}
+.testimonial .name {
+  font-weight: bold;
+  color: black;
+  font-family: "KaushanScript";
+}
+.testimonial .name:after {
+  width: 35px;
+  height: 1px;
+  top: 50%;
+  left: -28px;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+.testimonial .carousel-item {
+  margin-left: 12.5%;
+}
+
+/*======== End Testimonial Section ========*/
+/*======== Start Our Team Section ========*/
+.our-team {
+  min-height: 100vh;
+}
+.our-team span {
+  font-weight: bold;
+}
+.our-team .card-container .icons-wrapper {
+  background-color: rgba(252, 227, 138, 0.9);
+}
+.our-team .card-container .icons-wrapper i {
+  color: rgba(243, 129, 129, 0.9);
+  font-size: 1.125rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*======== End Our Team Section ========*/
+/*======== Start Sponsors Section ========*/
+.sponsors {
+  background-color: #f8f8f8;
+}
+.sponsors .row div {
+  cursor: pointer;
+}
+.sponsors .row div:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease;
+}
+
+/*======== End Sponsors Section ========*/
+/*======== Start Our Work Section ========*/
+.our-work .work-imgs {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.our-work .work-imgs .img-container {
+  background-color: none;
+}
+.our-work .work-imgs .img-container .card-container i {
+  font-size: 1.125rem;
+}
+.our-work .work-imgs .img-container .card-container:hover {
+  transform: translate(0px, 0px);
+}
+.our-work .work-imgs .lg-img {
+  grid-area: 1/3/3/3;
+}
+.our-work .testimonial {
+  background-color: #f8f8f8;
+}
+.our-work .testimonial .name {
+  font-size: 1.125rem;
+}
+.our-work .testimonial .name {
+  font-weight: bold;
+  color: black;
+  font-family: "KaushanScript";
+}
+.our-work .testimonial .name:after {
+  width: 35px;
+  height: 1px;
+  top: 50%;
+  left: -28px;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+.our-work .testimonial .carousel-item {
+  margin-left: 12.5%;
+}
+
+/*======== End Our Work Section ========*/
+/*======== Start Happy Clients Section ========*/
+.clients {
+  background-image: url("../assets/images/happy-client/bg-happy-client.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.clients .clients-wrapper .client-image {
+  width: 120px;
+  height: 120px;
+}
+.clients .clients-wrapper .client-image img {
+  height: 100%;
+}
+.clients .clients-wrapper .client-description p:not(.last) {
+  color: black;
+}
+.clients .clients-wrapper .client-description p:first-of-type {
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.clients .clients-wrapper .client-description p:nth-of-type(2) {
+  position: relative;
+}
+.clients .clients-wrapper .client-description p:nth-of-type(2):after {
+  top: 30px;
+  left: 0px;
+  width: 70px;
+  height: 3px;
+  background-color: #f38181;
+}
+
+/*======== End Happy Clients Section ========*/
+/*======== Start Blogs Section ========*/
+.blogs .blogs-cards .card .time {
+  position: absolute;
+  left: -10px;
+  bottom: 48%;
+  background-color: #95e1d3;
+  font-family: "Montserrat";
+}
+.blogs .blogs-cards .card .time p:first-of-type {
+  font-size: 1.75rem;
+}
+.blogs .blogs-cards .card .card-body p:first-of-type {
+  color: black;
+}
+.blogs .blogs-cards .card .card-body p:last-of-type:after {
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  bottom: -15px;
+  background-color: #999;
+}
+.blogs .blogs-cards .card .card-body .viewers i {
+  color: #95e1d3;
+}
+
+/*======== End Blogs Section ========*/
+/*======== Start Map Section ========*/
+.map {
+  background-image: url("../assets/images/map/bg-map.jpg");
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+}
+.map .map-text {
+  color: #f38181;
+}
+.map .map-text i {
+  font-size: 2.25rem;
+}
+.map iframe {
+  height: 400px;
+}
+
+/*======== End Map Section ========*/
+/*======== Start Footer Section ========*/
+footer .footer-wrapper .footer-text .logo-name {
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+}
+footer .footer-wrapper .footer-text .social-media i {
+  color: #95e1d3;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+footer .footer-wrapper .footer-text .followers:after {
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #999;
+}
+footer .footer-wrapper .footer-text form input {
+  outline: none;
+  border: 2px solid #f8f8f8;
+}
+footer .footer-wrapper .footer-text form button {
+  border: none;
+  background-color: #95e1d3;
+  color: white;
+}
+footer .footer-wrapper .footer-blogs .blog-text {
+  font-size: 1.125rem;
+}
+footer .footer-wrapper .footer-blogs img {
+  cursor: pointer;
+}
+footer .footer-wrapper .instagram .images {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+footer .footer-wrapper .instagram .images img {
+  width: 100%;
+  cursor: pointer;
+}
+footer .footer-wrapper:after {
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  left: 0px;
+  bottom: 0px;
+}
+footer .footer-end {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+footer .footer-end span {
+  color: #f38181;
+}
+
+/*======== End Footer Section ========*//*# sourceMappingURL=style.css.map */

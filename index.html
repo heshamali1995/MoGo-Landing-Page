@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="JS"/>
+        <title>Mogo Landing Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+        <link rel="icon" href="./assets/images/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="stylesheet" href="./css/style.css"/>
+        <style></style>
+        <!--[if lt IE 9]>
+          <script src="./js/html5shiv.min.js"></script>
+        <![endif]-->
+        <script></script>
+    </head>
+    <body>
+      <!-- Start Header Section -->
+      <header class="text-white position-relative">
+        <div class="navigate-top">
+          <i class="navigate fa-solid fa-chevron-up w-100 h-100 text-center text-white"></i>
+        </div>
+        <div class="overlay position-absolute w-100 h-100"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MoGo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+                <li class="nav-item me-4">
+                  <a class="nav-link active" aria-current="page" href="#about">about</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="#service">service</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="#work">work</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="#blog">blog</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="#contact">contact</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <i class="fa-solid fa-cart-shopping me-5"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <section id="carouselExampleCaptions" class="slider carousel slide pt-5 text-center" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2>Creative Template</h2>
+              <h1 class="text-uppercase mb-5 w-50 m-auto">welcome to mogo</h1>
+              <button class="text-white text-uppercase bg-transparent position-relative">learn more</button>
+            </div>
+            <div class="carousel-item">
+              <h2>Creative Template</h2>
+              <h1 class="text-uppercase mb-5 w-50 m-auto">welcome to mogo</h1>
+              <button class="text-white text-uppercase bg-transparent position-relative"">learn more</button>
+            </div>
+            <div class="carousel-item">
+              <h2>Creative Template</h2>
+              <h1 class="text-uppercase mb-5 w-50 m-auto">welcome to mogo</h1>
+              <button class="text-white text-uppercase bg-transparent position-relative"">learn more</button>
+            </div>
+            <div class="carousel-item">
+              <h2>Creative Template</h2>
+              <h1 class="text-uppercase mb-5 w-50 m-auto">welcome to mogo</h1>
+              <button class="text-white text-uppercase bg-transparent position-relative"">learn more</button>
+            </div>
+          </div>
+          <div class="carousel-indicators justify-content-between mb-5">
+            <button class="active text-white position-relative" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+              <p class="pt-3 fw-bold">01 <span class="text-uppercase">intro</span></p>
+            </button>
+            <button class="text-white position-relative" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+              <p class="pt-3 fw-bold">02 <span class="text-uppercase">work</span></p>
+            </button>
+            <button class="text-white position-relative" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+              <p class="pt-3 fw-bold">03 <span class="text-uppercase">about</span></p>
+            </button>
+            <button class="text-white position-relative" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
+              <p class="pt-3 fw-bold">04 <span class="text-uppercase">contact</span></p>
+            </button>
+          </div>
+        </section>
+      </header>
+      <!-- End Header Section -->
+
+      <!-- Start Story Section -->
+      <section id="about" class="story d-flex flex-column justify-content-between">
+        <div class="our-story mb-5">
+          <div class="container text-center">
+            <h3 class="mb-3 pt-4">What we do</h3>
+            <h2 class="text-uppercase mb-5">story about us</h2>
+            <p class="w-75 m-auto mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sequi excepturi ad, adipisci neque, earum, dolor quae fugiat tempore nobis eos? Animi saepe officiis tenetur! Fugiat similique laudantium non laborum.</p>
+            <div class="img-wrapper row g-4 justify-content-between position-relative">
+              <div class="col-sm-6 col-lg-4 h-100">
+                <div class="img-container w-100 h-100">
+                  <div class="card-container w-100 h-100 position-relative">
+                    <div class="card-overlay position-absolute text-white">
+                      <div class="position-absolute">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p class="text-uppercase text-white fw-bold mb-0">super team</p>
+                      </div>
+                    </div>
+                    <img class="w-100 h-100" src="./assets/images/our-story/img-3.jpg" alt="story"/>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 h-100">
+                <div class="img-container w-100 h-100">
+                  <div class="card-container w-100 h-100 position-relative">
+                    <div class="card-overlay position-absolute text-white">
+                      <div class="position-absolute">
+                        <i class="fa-solid fa-desktop"></i>
+                        <p class="text-uppercase text-white fw-bold mb-0">digital</p>
+                      </div>
+                    </div>
+                    <img class="w-100 h-100" src="./assets/images/our-story/img-1.jpg" alt="story"/>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 h-100">
+                <div class="img-container w-100 h-100">
+                  <div class="card-container w-100 h-100 position-relative">
+                    <div class="card-overlay position-absolute text-white">
+                      <div class="position-absolute">
+                        <i class="fa-brands fa-creative-commons"></i>
+                        <p class="text-uppercase text-white fw-bold mb-0">creativity</p>
+                      </div>
+                    </div>
+                    <img class="w-100 h-100" src="./assets/images/our-story/img-2.jpg" alt="story"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats text-white">
+          <div class="container">
+            <div class="row g-0">
+              <div class="stat col-sm-4 col-md">
+                <div class="py-5 border-start border-end d-flex flex-column align-items-center">
+                  <p>42</p>
+                  <p class="text-uppercase text-center">web design projects</p>
+                </div>
+              </div>
+              <div class="stat col-sm-4 col-md">
+                <div class="py-5 border-end d-flex flex-column align-items-center justify-content-center">
+                  <p>123</p>
+                  <p class="text-uppercase text-center">happy clients</p>
+                </div>
+              </div>
+              <div class="stat col-sm-4 col-md">
+                <div class="py-5 border-end d-flex flex-column align-items-center justify-content-center">
+                  <p>15</p>
+                  <p class="text-uppercase text-center">award winner</p>
+                </div>
+              </div>
+              <div class="stat col-sm-4 col-md">
+                <div class="py-5 border-end d-flex flex-column align-items-center justify-content-center">
+                  <p>99</p>
+                  <p class="text-uppercase text-center">cup of coffe</p>
+                </div>
+              </div>
+              <div class="stat col-sm-4 col-md">
+                <div class="py-5 border-end d-flex flex-column align-items-center justify-content-center">
+                  <p>24</p>
+                  <p class="text-uppercase text-center">members</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Story Section -->
+
+      <!-- Start Services Section -->
+      <section class="services">
+        <div class="container">
+          <div class="serv-text pt-5 text-center">
+            <h3 class="mb-3 pt-4">We Work With</h3>
+            <h2 class="text-uppercase mb-5">amazing services</h2>
+          </div>
+          <div class="serv-wrapper pt-5">
+            <div class="first-row position-relative">
+              <div class="row">
+                <div class="serv-container col-sm-6 col-lg-4 d-flex p-4">
+                  <div class="serv-image pe-4">
+                    <img src="./assets/images/services/1.png" alt="service"/>
+                  </div>
+                  <div class="serv-description">
+                    <p class="text-uppercase">photography</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+                <div class="serv-container col-sm-6 col-lg-4 d-flex p-4">
+                  <div class="serv-image pe-4">
+                    <img src="./assets/images/services/2.png" alt="service"/>
+                  </div>
+                  <div class="serv-description">
+                    <p class="text-uppercase">web design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+                <div class="serv-container col-sm-6 col-lg-4 d-flex p-4">
+                  <div class="serv-image pe-4">
+                    <img src="./assets/images/services/3.png" alt="service"/>
+                  </div>
+                  <div class="serv-description">
+                    <p class="text-uppercase">creativity</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="second-row position-relative">
+              <div class="row">
+                <div class="serv-container col-sm-6 col-lg-4 d-flex p-4">
+                  <div class="serv-image pe-4">
+                    <img src="./assets/images/services/4.png" alt="service"/>
+                  </div>
+                  <div class="serv-description">
+                    <p class="text-uppercase">seo</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+                <div class="serv-container col-sm-6 col-lg-4 d-flex p-4">
+                  <div class="serv-image pe-4">
+                    <img src="./assets/images/services/5.png" alt="service"/>
+                  </div>
+                  <div class="serv-description">
+                    <p class="text-uppercase">css/html</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+                <div class="serv-container col-sm-6 col-lg-4 d-flex p-4">
+                  <div class="serv-image pe-4">
+                    <img src="./assets/images/services/6.png" alt="service"/>
+                  </div>
+                  <div class="serv-description">
+                    <p class="text-uppercase">digital</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- Start Unique Design Section -->
+      <section class="unique">
+        <div class="container d-flex flex-column">
+          <div class="unique-text pt-5 text-center">
+            <h3 class="mb-3 pt-4">For All Devices</h3>
+            <h2 class="text-uppercase mb-5">unique design</h2>
+          </div>
+          <div class="unique-img text-center position-relative">
+            <img class="h-100" src="./assets/images/unique-design/img-1.png" alt="unique-design"/>
+            <img class="sm-image position-absolute" src="./assets/images/unique-design/img-2.png" alt="unique-design"/>
+          </div>
+        </div>
+      </section>
+      <!-- End Unique Design Section -->
+
+      <!-- Start What We Do Section -->
+      <section id="service" class="we-do py-5">
+        <div class="container">
+          <div class="do-text text-center mb-4">
+            <h3 class="mb-3 pt-5">Service</h3>
+            <h2 class="text-uppercase mb-5">what we do</h2>
+            <p class="w-75 m-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ea accusantium dolorum cumque est eveniet cupiditate impedit omnis sunt earum debitis laborum, assumenda commodi dicta temporibus quia, delectus quae quibusdam.</p>
+          </div>
+          <div class="do-wrapper d-flex justify-content-between pt-5">
+            <div class="do-img">
+              <img class="h-100 w-100" src="./assets/images/what-we-do/img-1.jpg" alt="our-services" />
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header d-block" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <img class="me-3" src="./assets/images/what-we-do/1.png" alt="photo"/>
+                    <span class="text-uppercase">photography</span>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header d-block" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <img class="me-3" src="./assets/images/what-we-do/2.png" alt="creativity"/>
+                    <span class="text-uppercase">creativity</span>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header d-block" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <img class="me-3" src="./assets/images/what-we-do/3.png" alt="web"/>
+                    <span class="text-uppercase">web design</span>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End What We Do Section -->
+
+      <!-- Start Testimonial Section -->
+      <section class="testimonial py-5">
+        <div class="container">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active w-75" data-bs-interval="10000">
+                <div class="row">
+                  <div class="mb-3 col-xl-3 text-center">
+                    <img src="./assets/images/testimonial/1.png" alt="test"/>
+                  </div>
+                  <div class="col-xl-9 d-flex flex-column justify-content-between">
+                    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, necessitatibus error. Nisi in, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!</q></p>
+                    <p class="name mb-0 ms-5 position-relative">Jon Doe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item w-75" data-bs-interval="10000">
+                <div class="row">
+                  <div class="mb-3 col-xl-3 text-center">
+                    <img src="./assets/images/testimonial/1.png" alt="test"/>
+                  </div>
+                  <div class="col-xl-9 d-flex flex-column justify-content-between">
+                    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, necessitatibus error. Nisi in, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!</q></p>
+                    <p class="name mb-0 ms-5 position-relative">Jon Doe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item w-75" data-bs-interval="10000">
+                <div class="row">
+                  <div class="mb-3 col-xl-3 text-center">
+                    <img src="./assets/images/testimonial/1.png" alt="test"/>
+                  </div>
+                  <div class="col-xl-9 d-flex flex-column justify-content-between">
+                    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, necessitatibus error. Nisi in, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!</q></p>
+                    <p class="name mb-0 ms-5 position-relative">Jon Doe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonial Section -->
+
+      <!-- Start Our Team Section -->
+      <section class="our-team py-5">
+        <div class="container">
+          <div class="team-text text-center mb-4">
+            <h3 class="mb-3">Who We Are</h3>
+            <h2 class="text-uppercase mb-5">meet our team</h2>
+            <p class="w-75 m-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ea accusantium dolorum cumque est eveniet cupiditate impedit omnis sunt earum debitis laborum, assumenda commodi dicta temporibus quia, delectus quae quibusdam.</p>
+          </div>
+          <div class="team-imgs">
+            <div class="row mt-0 gy-5 text-center">
+              <div class="col-sm-6 col-lg-4 pb-5">
+                <div class="img-container w-100 h-100 mb-3">
+                  <div class="card-container w-100 h-100 position-relative">
+                    <div class="card-overlay position-absolute text-white">
+                      <div class="icons-wrapper position-absolute">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                      </div>
+                    </div>
+                    <img class="w-100 h-100" src="./assets/images/our-team/img-1.jpg" alt="team"/>
+                  </div>
+                </div>
+                <span class="name text-uppercase">matthew dix</span>
+                <p>Graphic Design</p>
+              </div>
+              <div class="col-sm-6 col-lg-4 pb-5">
+                <div class="img-container w-100 h-100 mb-3">
+                  <div class="card-container w-100 h-100 position-relative">
+                    <div class="card-overlay position-absolute text-white">
+                      <div class="icons-wrapper position-absolute">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                      </div>
+                    </div>
+                    <img class="w-100 h-100" src="./assets/images/our-team/img-2.jpg" alt="team"/>
+                  </div>
+                </div>
+                <span class="name text-uppercase">christopher campbell</span>
+                <p>Branding/UX Design</p>
+              </div>
+              <div class="col-sm-6 col-lg-4 pb-5">
+                <div class="img-container w-100 h-100 mb-3">
+                  <div class="card-container w-100 h-100 position-relative">
+                    <div class="card-overlay position-absolute text-white">
+                      <div class="icons-wrapper position-absolute">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                      </div>
+                    </div>
+                    <img class="w-100 h-100" src="./assets/images/our-team/img-3.jpg" alt="team"/>
+                  </div>
+                </div>
+                <span class="name text-uppercase">michael fertig</span>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Our Team Section -->
+
+      <!-- Start Sponsors Section -->
+      <section class="sponsors">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 py-5 text-center">
+              <img src="./assets/images/brand/img-1.png" alt="brand"/>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 py-5 text-center">
+              <img src="./assets/images/brand/img-2.png" alt="brand"/>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 py-5 text-center">
+              <img src="./assets/images/brand/img-3.png" alt="brand"/>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 py-5 text-center">
+              <img src="./assets/images/brand/img-4.png" alt="brand"/>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 py-5 text-center">
+              <img src="./assets/images/brand/img-5.png" alt="brand"/>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 py-5 text-center">
+              <img src="./assets/images/brand/img-6.png" alt="brand"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Sponsors Section -->
+
+      <!-- Start Our Work Section -->
+      <section id="work" class="our-work">
+        <div class="container">
+          <div class="work-text text-center mb-4 pt-5">
+            <h3 class="mb-3">What We Do</h3>
+            <h2 class="text-uppercase mb-5">some of our work</h2>
+            <p class="w-75 m-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ea accusantium dolorum cumque est eveniet cupiditate impedit omnis sunt earum debitis laborum, assumenda commodi dicta temporibus quia, delectus quae quibusdam.</p>
+          </div>
+        </div>
+        <div class="work-imgs d-grid py-5">
+          <div class="img-container">
+            <div class="card-container position-relative">
+              <div class="card-overlay position-absolute text-white">
+                <div class="icons-wrapper position-absolute text-center">
+                  <i class="fa-solid fa-image mb-2"></i>
+                  <p class="text-uppercase text-white mb-0">creatively designed</p>
+                  <p class="text-white mb-0">Lorem Ipsum Dolor Sit</p>
+                </div>
+              </div>
+              <img class="w-100 h-100" src="./assets/images/our-work/img-1.jpg" alt="team"/>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="card-container position-relative">
+              <div class="card-overlay position-absolute text-white">
+                <div class="icons-wrapper position-absolute text-center">
+                  <i class="fa-solid fa-image mb-2"></i>
+                  <p class="text-uppercase text-white mb-0">creatively designed</p>
+                  <p class="text-white mb-0">Lorem Ipsum Dolor Sit</p>
+                </div>
+              </div>
+              <img class="w-100 h-100" src="./assets/images/our-work/img-2.jpg" alt="team"/>
+            </div>
+          </div>
+          <div class="img-container lg-img">
+            <div class="card-container position-relative">
+              <div class="card-overlay position-absolute text-white">
+                <div class="icons-wrapper position-absolute text-center">
+                  <i class="fa-solid fa-image mb-2"></i>
+                  <p class="text-uppercase text-white mb-0">creatively designed</p>
+                  <p class="text-white mb-0">Lorem Ipsum Dolor Sit</p>
+                </div>
+              </div>
+              <img class="w-100 h-100" src="./assets/images/our-work/img-3.jpg" alt="team"/>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="card-container position-relative">
+              <div class="card-overlay position-absolute text-white">
+                <div class="icons-wrapper position-absolute text-center">
+                  <i class="fa-solid fa-image mb-2"></i>
+                  <p class="text-uppercase text-white mb-0">creatively designed</p>
+                  <p class="text-white mb-0">Lorem Ipsum Dolor Sit</p>
+                </div>
+              </div>
+              <img class="w-100 h-100" src="./assets/images/our-work/img-4.jpg" alt="team"/>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="card-container position-relative">
+              <div class="card-overlay position-absolute text-white">
+                <div class="icons-wrapper position-absolute text-center">
+                  <i class="fa-solid fa-image mb-2"></i>
+                  <p class="text-uppercase text-white mb-0">creatively designed</p>
+                  <p class="text-white mb-0">Lorem Ipsum Dolor Sit</p>
+                </div>
+              </div>
+              <img class="w-100 h-100" src="./assets/images/our-work/img-5.jpg" alt="team"/>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="card-container position-relative">
+              <div class="card-overlay position-absolute text-white">
+                <div class="icons-wrapper position-absolute text-center">
+                  <i class="fa-solid fa-image mb-2"></i>
+                  <p class="text-uppercase text-white mb-0">creatively designed</p>
+                  <p class="text-white mb-0">Lorem Ipsum Dolor Sit</p>
+                </div>
+              </div>
+              <img class="w-100 h-100" src="./assets/images/our-work/img-6.jpg" alt="team"/>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="card-container position-relative">
+              <div class="card-overlay position-absolute text-white">
+                <div class="icons-wrapper position-absolute text-center">
+                  <i class="fa-solid fa-image mb-2"></i>
+                  <p class="text-uppercase text-white mb-0">creatively designed</p>
+                  <p class="text-white mb-0">Lorem Ipsum Dolor Sit</p>
+                </div>
+              </div>
+              <img class="w-100 h-100" src="./assets/images/our-work/img-7.jpg" alt="team"/>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="container">
+            <div id="testimonialCarousel" class="carousel carousel-dark slide py-5" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active w-75" data-bs-interval="10000">
+                  <div class="row g-5">
+                    <div class="col-xl-3 text-center">
+                      <img class="img-fluid rounded-circle" src="./assets/images/testimonial/img-1.jpg" alt="test"/>
+                    </div>
+                    <div class="col-xl-9 d-flex flex-column justify-content-between">
+                      <p class="text-center"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, necessitatibus error. Nisi in, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!</q></p>
+                      <p class="name mb-0 ms-5 position-relative">Jon Doe</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item w-75" data-bs-interval="10000">
+                  <div class="row g-5">
+                    <div class="col-xl-3 text-center">
+                      <img class="img-fluid rounded-circle" src="./assets/images/testimonial/img-2.jpg" alt="test"/>
+                    </div>
+                    <div class="col-xl-9 d-flex flex-column justify-content-between">
+                      <p class="text-center"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, necessitatibus error. Nisi in, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!</q></p>
+                      <p class="name mb-0 ms-5 position-relative">Jon Doe</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item w-75" data-bs-interval="10000">
+                  <div class="row g-5">
+                    <div class="col-xl-3 text-center">
+                      <img class="img-fluid rounded-circle" src="./assets/images/testimonial/img-3.jpg" alt="test"/>
+                    </div>
+                    <div class="col-xl-9 d-flex flex-column justify-content-between">
+                      <p class="text-center"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, necessitatibus error. Nisi in, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!, commodi eius sapiente nesciunt ab maxime, iure voluptates tempora numquam officiis repellendus minus animi iusto officia exercitationem!</q></p>
+                      <p class="name mb-0 ms-5 position-relative">Jon Doe</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Our Work Section -->
+
+      <!-- Start Happy Clients Section -->
+      <section class="clients py-5">
+        <div class="container">
+          <div class="clients-text text-center mb-4">
+            <h3 class="mb-3 pt-5">Happy Clients</h3>
+            <h2 class="text-uppercase mb-5">what people say</h2>
+          </div>
+          <div class="clients-wrapper">
+            <div class="first-row position-relative">
+              <div class="row gy-5">
+                <div class="clients-container col-md-6 d-flex p-4">
+                  <div class="client-image position-relative me-4">
+                    <img class="rounded-circle" src="./assets/images/happy-client/img-1.jpg" alt="client"/>
+                  </div>
+                  <div class="client-description">
+                    <p class="text-uppercase mb-2">matthew dix</p>
+                    <p class="fst-italic mb-4">Graphic Design</p>
+                    <p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+                <div class="client-container col-md-6 d-flex p-4">
+                  <div class="client-image position-relative me-4">
+                    <img class="rounded-circle" src="./assets/images/happy-client/img-2.jpg" alt="client"/>
+                  </div>
+                  <div class="client-description">
+                    <p class="text-uppercase mb-2">nick karvounis</p>
+                    <p class="fst-italic mb-4">Graphic Design</p>
+                    <p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="second-row position-relative">
+              <div class="row gy-5">
+                <div class="clients-container col-md-6 d-flex p-4">
+                  <div class="client-image position-relative me-4">
+                    <img class="rounded-circle" src="./assets/images/happy-client/img-3.jpg" alt="client"/>
+                  </div>
+                  <div class="client-description">
+                    <p class="text-uppercase mb-2">jaelynn castillo</p>
+                    <p class="fst-italic mb-4">Graphic Design</p>
+                    <p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+                <div class="client-container col-md-6 d-flex p-4">
+                  <div class="client-image position-relative me-4">
+                    <img class="rounded-circle" src="./assets/images/happy-client/img-4.jpg" alt="client"/>
+                  </div>
+                  <div class="client-description">
+                    <p class="text-uppercase mb-2">mike petrucci</p>
+                    <p class="fst-italic mb-4">Graphic Design</p>
+                    <p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reiciendis debitis, Incidunt nihil asperiores.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Happy Clients Section -->
+
+      <!-- Start Blogs Section -->
+      <section id="blog" class="blogs py-5">
+        <div class="container">
+          <div class="blogs-text text-center mb-4">
+            <h3 class="mb-3 pt-5">Our Stories</h3>
+            <h2 class="text-uppercase mb-5">latest blogs</h2>
+          </div>
+          <div class="blogs-cards">
+            <div class="row gy-5">
+              <!-- Card 1 -->
+              <div class="col-lg-4 card-container">
+                <div class="card text-left p-0 border-0 position-relative">
+                  <div class="time py-3 px-4 fw-bolder text-center">
+                    <p class="text-white fw-bold mb-0">15</p>
+                    <p class="text-white fw-bold mb-0">Jan</p>
+                  </div>
+                  <img src="./assets/images/our-blog/img-1.jpg" class="card-img-top" alt="blog">
+                  <div class="card-body ps-0">
+                    <p class="fw-bold">Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="card-text position-relative mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit nihil ipsa optio! Consequuntur nam voluptatibus.</p>
+                    <div class="viewers d-flex">
+                      <div class="me-4">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        <span>542</span>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-comment-dots me-1"></i>
+                        <span>17</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-lg-4 card-container">
+                <div class="card text-left p-0 border-0 position-relative">
+                  <div class="time py-3 px-4 fw-bolder text-center">
+                    <p class="text-white fw-bold mb-0">14</p>
+                    <p class="text-white fw-bold mb-0">Jan</p>
+                  </div>
+                  <img src="./assets/images/our-blog/img-2.jpg" class="card-img-top" alt="blog">
+                  <div class="card-body ps-0">
+                    <p class="fw-bold">Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="card-text position-relative mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit nihil ipsa optio! Consequuntur nam voluptatibus.</p>
+                    <div class="viewers d-flex">
+                      <div class="me-4">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        <span>992</span>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-comment-dots me-1"></i>
+                        <span>42</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-lg-4 card-container">
+                <div class="card text-left p-0 border-0 position-relative">
+                  <div class="time py-3 px-4 fw-bolder text-center">
+                    <p class="text-white fw-bold mb-0">12</p>
+                    <p class="text-white fw-bold mb-0">Jan</p>
+                  </div>
+                  <img src="./assets/images/our-blog/img-3.jpg" class="card-img-top" alt="blog">
+                  <div class="card-body ps-0">
+                    <p class="fw-bold">Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="card-text position-relative mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit nihil ipsa optio! Consequuntur nam voluptatibus.</p>
+                    <div class="viewers d-flex">
+                      <div class="me-4">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        <span>1560</span>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-comment-dots me-1"></i>
+                        <span>98</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Blogs Section -->
+
+      <!-- Start Map Section -->
+      <section class="accordion map py-5" id="accordionExample">
+        <div class="accordion-item bg-transparent border-0">
+          <div class="accordion-header map-text text-center">
+            <i class="fa-solid fa-location-dot d-block mb-3"></i>
+            <h2 class="text-uppercase mb-5 map-header">open map</h2>
+          </div>
+          <div id="collapseOne" class="accordion-collapse collapse map-carousel" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d79466.26604960626!2d-0.19779784176715043!3d51.50733004537892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sCairo%2C+UK!3m2!1d51.5073509!2d-0.1277583!5e0!3m2!1sen!2s!4v1469206441744" class="w-100" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Map Section -->
+
+      <!-- Start Footer Section -->
+      <footer id="contact">
+        <div class="container">
+          <div class="footer-wrapper position-relative py-5">
+            <div class="row gy-5">
+              <div class="footer-text col-md-6 col-xl-4">
+                <p class="logo-name">MoGo</p>
+                <p  class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus optio cum consectetur, earum, at commodi blanditiis quod doloremque assumenda labore iste tenetur aut porro, explicabo fugit fuga! Voluptatem, magnam?</p>
+                <p class="fw-bold text-black followers position-relative">15K followers</p>
+                <div class="social-media mb-4">
+                  <span class="me-4">Follow Us:</span>
+                  <i class="fa-brands fa-facebook-f me-3"></i>
+                  <i class="fa-brands fa-twitter me-3"></i>
+                  <i class="fa-brands fa-instagram me-3"></i>
+                  <i class="fa-brands fa-pinterest me-3"></i>
+                  <i class="fa-brands fa-google-plus-g me-3"></i>
+                  <i class="fa-brands fa-youtube me-3"></i>
+                </div>
+                <form class="position-relative d-flex">
+                  <input type="email" placeholder="Your Email..." class="fst-italic p-2"/>
+                  <button class="text-uppercase fw-bold p-2">subscribe</button>
+                </form>
+              </div>
+              <div class="footer-blogs col-md-6 col-xl-4">
+                <p class="text-black fw-bold blog-text text-uppercase mb-5">blogs</p>
+                <div class="blog d-flex mb-4">
+                  <div class="me-3">
+                    <img src="./assets/images/our-blog/img-4.jpg" alt="blog"/>
+                  </div>
+                  <div>
+                    <p class="pt-2 text-uppercase text-black mb-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Jan 9, 2022</p>
+                  </div>
+                </div>
+                <div class="blog d-flex mb-4">
+                  <div class="me-3">
+                    <img src="./assets/images/our-blog/img-5.jpg" alt="blog"/>
+                  </div>
+                  <div>
+                    <p class="pt-2 text-uppercase text-black mb-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Jan 9, 2022</p>
+                  </div>
+                </div>
+                <div class="blog d-flex mb-4">
+                  <div class="me-3">
+                    <img src="./assets/images/our-blog/img-6.jpg" alt="blog"/>
+                  </div>
+                  <div>
+                    <p class="pt-2 text-uppercase text-black mb-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Jan 9, 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="instagram col-md-6 col-xl-4">
+                <p class="text-black fw-bold blog-text text-uppercase mb-5">instagram</p>
+                <div class="images d-grid mb-3">
+                  <div>
+                    <img src="./assets/images/instagram/img-1.jpg" alt="instagram"/>
+                  </div>
+                  <div>
+                    <img src="./assets/images/instagram/img-2.jpg" alt="instagram"/>
+                  </div>
+                  <div>
+                    <img src="./assets/images/instagram/img-3.jpg" alt="instagram"/>
+                  </div>
+                  <div>
+                    <img src="./assets/images/instagram/img-4.jpg" alt="instagram"/>
+                  </div>
+                  <div>
+                    <img src="./assets/images/instagram/img-5.jpg" alt="instagram"/>
+                  </div>
+                  <div>
+                    <img src="./assets/images/instagram/img-6.jpg" alt="instagram"/>
+                  </div>
+                  <div>
+                    <img src="./assets/images/instagram/img-7.jpg" alt="instagram"/>
+                  </div>
+                  <div>
+                    <img src="./assets/images/instagram/img-8.jpg" alt="instagram"/>
+                  </div>
+                  <div>
+                    <img src="./assets/images/instagram/img-9.jpg" alt="instagram"/>
+                  </div>
+                </div>
+                <p class="fst-italic">View More Photos</p>
+              </div>
+            </div>
+          </div>
+          <p class="footer-end text-center py-4">&copy; 2016 MoGo free PSD template by <span>Laaqiq</span></p>
+        </div>
+      </footer>
+      <!-- End Footer Section -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      <script src="./js/file.js"></script>
+    </body>
+</html>

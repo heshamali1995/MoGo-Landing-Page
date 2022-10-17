@@ -1,0 +1,38 @@
+@use "./variables" as *;
+@font-face {
+    font-family: "KaushanScript";
+    src: url("../assets/fonts/Kaushan/KaushanScript-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+@mixin fontFace($family) {
+    font-family: $family;
+}
+
+@mixin carouselStyle {
+    background-color: $bg-color;
+    .name {
+        font-weight: bold;
+        color: $black;
+        @include fontFace("KaushanScript");
+        &:after {
+            @extend %after;
+            width: 35px;
+            height: 1px;
+            top: 50%;
+            left: -28px;
+            transform: translate(-50%, -50%);
+            background-color: red;
+        }
+    }
+    .carousel-item {
+        margin-left: 12.5%;
+    }
+}
